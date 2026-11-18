@@ -1,0 +1,12 @@
+[project]
+name = "scamshield-brain"
+version = "1.0.0"
+description = "Local model services for ScamShield: Kev-4B decisions + Qwen3.5-4B summaries (MLX)"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "kev[serve] @ git+https://github.com/jaredpalmer/kev@2074cc44256200bb37540103fa4572901faa10f3",
+    "mlx-lm>=0.31.3,<0.32",
+]
+
+[tool.uv]
+package = false

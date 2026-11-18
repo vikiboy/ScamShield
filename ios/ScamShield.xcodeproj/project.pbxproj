@@ -1,0 +1,646 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0AF341D64A79BA002A717899 /* FolderAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7018D392A3479753A215D3D5 /* FolderAccess.swift */; };
+		0B5E4002EA26EEFA6A10CA12 /* NotificationPlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EFE673286E09393AE03243 /* NotificationPlannerTests.swift */; };
+		1A6FBB94E49F65F298919D33 /* OverlayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3EE18EC6AF6CA85C5C9DDB /* OverlayTests.swift */; };
+		1AE24E1C2D084C0ADBC6621E /* Inbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62847A8C284513133C8EDE2F /* Inbox.swift */; };
+		1BD233763EAB03F2EE4B7C03 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E8B934B381409CA884CE6B /* SettingsView.swift */; };
+		264041711BBDF5FFD6ED9DFD /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACAD9947FAF1DA70D70E59C /* Router.swift */; };
+		26D759C2D93EE05B47DB8C9B /* BucketScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF3BF4B8BA6DD6B036A769 /* BucketScreen.swift */; };
+		3501441772A425C8C337374E /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F76E228D804136C9C7F410 /* RootView.swift */; };
+		3C912B126043AA3EFFDB2518 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD64A6EBB0DA9387DEF6E0C /* Item.swift */; };
+		4D0E046924AD47FA793E6D2C /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E484526BC768EC7F74D7C3 /* OnboardingView.swift */; };
+		6143935FDF796A9B208C4207 /* ScamShieldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A895FC8E1BC61E16D12E70 /* ScamShieldApp.swift */; };
+		61A4DF227AD3ECC2FD6C2A5B /* Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD2CF2DEECCE8E59D313D89 /* Formatting.swift */; };
+		6D5687D619C7999BA9DB0047 /* ScamShieldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DEF620BE794541250DCCF4 /* ScamShieldUITests.swift */; };
+		7E6E488E89D6C75DCDD5976C /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383B6DBE011E31021262F361 /* LocalState.swift */; };
+		BA0D300A8CC372DC54854E5B /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FF9675568ABA97397A679A /* ItemDetailView.swift */; };
+		BE4AB549F8928B38EE8BE214 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C8CECCF8733CA755A71F318 /* Assets.xcassets */; };
+		C176A9A1ABE12687A7ED63EA /* SyncFolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD2C4B7039BF4AE4CCED02 /* SyncFolder.swift */; };
+		D0C6AE761676EE873FD90E63 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5284A22883AED60F31250AB6 /* Components.swift */; };
+		D8B0F4AFB257D676164AFE0A /* DecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D361B2AD1C9917FF4AD976 /* DecodingTests.swift */; };
+		DABC65427DE5B2B029554EA8 /* VoicemailPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480DEF1CE8D9B58F97AB664 /* VoicemailPlayer.swift */; };
+		DEEFA806A0E58B9AADB9C473 /* InboxStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA4C58A4C23186EF42AEB03 /* InboxStore.swift */; };
+		E8F3684E2BF534749DA3E80D /* MacLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCB663DB6670BD7B559D503 /* MacLink.swift */; };
+		EBE9B0B459F9728AB1D913AB /* Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FA0F46DDD6FEDF9741A6A /* Overlay.swift */; };
+		F1AC20F82FA6BAACBF22DCEA /* Notifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A914085F95ABFA05A3E4E6 /* Notifier.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A20A9BD0D2C0EF4E12079DDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A159ED954C0FE4063FEDF625 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB14AD11E484F9789665425A;
+			remoteInfo = ScamShield;
+		};
+		A51D92B7F4D8E915685564AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A159ED954C0FE4063FEDF625 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB14AD11E484F9789665425A;
+			remoteInfo = ScamShield;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		009422754F8036BD7FB2D0D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		17FD2C4B7039BF4AE4CCED02 /* SyncFolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncFolder.swift; sourceTree = "<group>"; };
+		2DD2CF2DEECCE8E59D313D89 /* Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatting.swift; sourceTree = "<group>"; };
+		325FA0F46DDD6FEDF9741A6A /* Overlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overlay.swift; sourceTree = "<group>"; };
+		36F76E228D804136C9C7F410 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		383B6DBE011E31021262F361 /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
+		38DEF620BE794541250DCCF4 /* ScamShieldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScamShieldUITests.swift; sourceTree = "<group>"; };
+		5284A22883AED60F31250AB6 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		62847A8C284513133C8EDE2F /* Inbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inbox.swift; sourceTree = "<group>"; };
+		7018D392A3479753A215D3D5 /* FolderAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderAccess.swift; sourceTree = "<group>"; };
+		7ACAD9947FAF1DA70D70E59C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		8480DEF1CE8D9B58F97AB664 /* VoicemailPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoicemailPlayer.swift; sourceTree = "<group>"; };
+		9C8CECCF8733CA755A71F318 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A6AADB7EF0459FCA61EC13C6 /* ScamShieldUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ScamShieldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB3EE18EC6AF6CA85C5C9DDB /* OverlayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayTests.swift; sourceTree = "<group>"; };
+		AFCB663DB6670BD7B559D503 /* MacLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacLink.swift; sourceTree = "<group>"; };
+		B2A895FC8E1BC61E16D12E70 /* ScamShieldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScamShieldApp.swift; sourceTree = "<group>"; };
+		BF6BD2F4CEB9778398712676 /* ScamShield.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = ScamShield.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2FF9675568ABA97397A679A /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
+		C4DCBCF4D911C1C3E326C806 /* ScamShieldTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ScamShieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8EFE673286E09393AE03243 /* NotificationPlannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPlannerTests.swift; sourceTree = "<group>"; };
+		CA6C120DB6A503D0F0A5798F /* Signing.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Signing.xcconfig; sourceTree = "<group>"; };
+		CEDF3BF4B8BA6DD6B036A769 /* BucketScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketScreen.swift; sourceTree = "<group>"; };
+		D7A914085F95ABFA05A3E4E6 /* Notifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifier.swift; sourceTree = "<group>"; };
+		DAA4C58A4C23186EF42AEB03 /* InboxStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxStore.swift; sourceTree = "<group>"; };
+		E6E484526BC768EC7F74D7C3 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		ECD64A6EBB0DA9387DEF6E0C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		F0D361B2AD1C9917FF4AD976 /* DecodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodingTests.swift; sourceTree = "<group>"; };
+		F7E8B934B381409CA884CE6B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0D7D3392C7A62FB45D56467B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CEDF3BF4B8BA6DD6B036A769 /* BucketScreen.swift */,
+				5284A22883AED60F31250AB6 /* Components.swift */,
+				C2FF9675568ABA97397A679A /* ItemDetailView.swift */,
+				E6E484526BC768EC7F74D7C3 /* OnboardingView.swift */,
+				36F76E228D804136C9C7F410 /* RootView.swift */,
+				F7E8B934B381409CA884CE6B /* SettingsView.swift */,
+				8480DEF1CE8D9B58F97AB664 /* VoicemailPlayer.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		161C390C1FC7E63A24924970 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				CA6C120DB6A503D0F0A5798F /* Signing.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		18C84736D8EC236B18F8CC10 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2DD2CF2DEECCE8E59D313D89 /* Formatting.swift */,
+				62847A8C284513133C8EDE2F /* Inbox.swift */,
+				ECD64A6EBB0DA9387DEF6E0C /* Item.swift */,
+				325FA0F46DDD6FEDF9741A6A /* Overlay.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2138E0B104EB281A8CCC8C15 /* ScamShield */ = {
+			isa = PBXGroup;
+			children = (
+				9C8CECCF8733CA755A71F318 /* Assets.xcassets */,
+				009422754F8036BD7FB2D0D8 /* Info.plist */,
+				715FA2C2BF7789F105D2A163 /* App */,
+				18C84736D8EC236B18F8CC10 /* Model */,
+				E6183472DBDA4A806BB3AD0E /* Store */,
+				9E1508DB1F82D2CF6270724C /* Sync */,
+				0D7D3392C7A62FB45D56467B /* Views */,
+			);
+			path = ScamShield;
+			sourceTree = "<group>";
+		};
+		28A5B98B5C19F3F1619B9979 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF6BD2F4CEB9778398712676 /* ScamShield.app */,
+				C4DCBCF4D911C1C3E326C806 /* ScamShieldTests.xctest */,
+				A6AADB7EF0459FCA61EC13C6 /* ScamShieldUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		715FA2C2BF7789F105D2A163 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7ACAD9947FAF1DA70D70E59C /* Router.swift */,
+				B2A895FC8E1BC61E16D12E70 /* ScamShieldApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7187E1695BF7708B6DD626D1 = {
+			isa = PBXGroup;
+			children = (
+				161C390C1FC7E63A24924970 /* Config */,
+				2138E0B104EB281A8CCC8C15 /* ScamShield */,
+				B62865FC467BFE12F62EB520 /* ScamShieldTests */,
+				9400CC3A91405B803690C80F /* ScamShieldUITests */,
+				28A5B98B5C19F3F1619B9979 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9400CC3A91405B803690C80F /* ScamShieldUITests */ = {
+			isa = PBXGroup;
+			children = (
+				38DEF620BE794541250DCCF4 /* ScamShieldUITests.swift */,
+			);
+			path = ScamShieldUITests;
+			sourceTree = "<group>";
+		};
+		9E1508DB1F82D2CF6270724C /* Sync */ = {
+			isa = PBXGroup;
+			children = (
+				7018D392A3479753A215D3D5 /* FolderAccess.swift */,
+				383B6DBE011E31021262F361 /* LocalState.swift */,
+				AFCB663DB6670BD7B559D503 /* MacLink.swift */,
+				17FD2C4B7039BF4AE4CCED02 /* SyncFolder.swift */,
+			);
+			path = Sync;
+			sourceTree = "<group>";
+		};
+		B62865FC467BFE12F62EB520 /* ScamShieldTests */ = {
+			isa = PBXGroup;
+			children = (
+				F0D361B2AD1C9917FF4AD976 /* DecodingTests.swift */,
+				C8EFE673286E09393AE03243 /* NotificationPlannerTests.swift */,
+				AB3EE18EC6AF6CA85C5C9DDB /* OverlayTests.swift */,
+			);
+			path = ScamShieldTests;
+			sourceTree = "<group>";
+		};
+		E6183472DBDA4A806BB3AD0E /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				DAA4C58A4C23186EF42AEB03 /* InboxStore.swift */,
+				D7A914085F95ABFA05A3E4E6 /* Notifier.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0B57573F28A0C67935BED527 /* ScamShieldTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50E5EC1F0EBD69F181D60882 /* Build configuration list for PBXNativeTarget "ScamShieldTests" */;
+			buildPhases = (
+				49C47A4ED09B86EB1DE0D2C0 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9198B39B2152D8136F6E6E6E /* PBXTargetDependency */,
+			);
+			name = ScamShieldTests;
+			packageProductDependencies = (
+			);
+			productName = ScamShieldTests;
+			productReference = C4DCBCF4D911C1C3E326C806 /* ScamShieldTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C173C49EEFB87A8917D50DCA /* ScamShieldUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C78BA21A2BC132655016D13D /* Build configuration list for PBXNativeTarget "ScamShieldUITests" */;
+			buildPhases = (
+				FD2479185C39D08B04BB8E5A /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42AA71D8FE9E186BB0B44ED7 /* PBXTargetDependency */,
+			);
+			name = ScamShieldUITests;
+			packageProductDependencies = (
+			);
+			productName = ScamShieldUITests;
+			productReference = A6AADB7EF0459FCA61EC13C6 /* ScamShieldUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		EB14AD11E484F9789665425A /* ScamShield */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D65ABC552367E1761EA7C52D /* Build configuration list for PBXNativeTarget "ScamShield" */;
+			buildPhases = (
+				59C912510B2B2F670DB9A374 /* Sources */,
+				73201AD395B11F88D23332D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScamShield;
+			packageProductDependencies = (
+			);
+			productName = ScamShield;
+			productReference = BF6BD2F4CEB9778398712676 /* ScamShield.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A159ED954C0FE4063FEDF625 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					C173C49EEFB87A8917D50DCA = {
+						TestTargetID = EB14AD11E484F9789665425A;
+					};
+					EB14AD11E484F9789665425A = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1D4AAC0CEB200FA087F9BF39 /* Build configuration list for PBXProject "ScamShield" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 7187E1695BF7708B6DD626D1;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 28A5B98B5C19F3F1619B9979 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB14AD11E484F9789665425A /* ScamShield */,
+				0B57573F28A0C67935BED527 /* ScamShieldTests */,
+				C173C49EEFB87A8917D50DCA /* ScamShieldUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		73201AD395B11F88D23332D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE4AB549F8928B38EE8BE214 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49C47A4ED09B86EB1DE0D2C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8B0F4AFB257D676164AFE0A /* DecodingTests.swift in Sources */,
+				0B5E4002EA26EEFA6A10CA12 /* NotificationPlannerTests.swift in Sources */,
+				1A6FBB94E49F65F298919D33 /* OverlayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59C912510B2B2F670DB9A374 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26D759C2D93EE05B47DB8C9B /* BucketScreen.swift in Sources */,
+				D0C6AE761676EE873FD90E63 /* Components.swift in Sources */,
+				0AF341D64A79BA002A717899 /* FolderAccess.swift in Sources */,
+				61A4DF227AD3ECC2FD6C2A5B /* Formatting.swift in Sources */,
+				1AE24E1C2D084C0ADBC6621E /* Inbox.swift in Sources */,
+				DEEFA806A0E58B9AADB9C473 /* InboxStore.swift in Sources */,
+				3C912B126043AA3EFFDB2518 /* Item.swift in Sources */,
+				BA0D300A8CC372DC54854E5B /* ItemDetailView.swift in Sources */,
+				7E6E488E89D6C75DCDD5976C /* LocalState.swift in Sources */,
+				E8F3684E2BF534749DA3E80D /* MacLink.swift in Sources */,
+				F1AC20F82FA6BAACBF22DCEA /* Notifier.swift in Sources */,
+				4D0E046924AD47FA793E6D2C /* OnboardingView.swift in Sources */,
+				EBE9B0B459F9728AB1D913AB /* Overlay.swift in Sources */,
+				3501441772A425C8C337374E /* RootView.swift in Sources */,
+				264041711BBDF5FFD6ED9DFD /* Router.swift in Sources */,
+				6143935FDF796A9B208C4207 /* ScamShieldApp.swift in Sources */,
+				1BD233763EAB03F2EE4B7C03 /* SettingsView.swift in Sources */,
+				C176A9A1ABE12687A7ED63EA /* SyncFolder.swift in Sources */,
+				DABC65427DE5B2B029554EA8 /* VoicemailPlayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD2479185C39D08B04BB8E5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D5687D619C7999BA9DB0047 /* ScamShieldUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42AA71D8FE9E186BB0B44ED7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB14AD11E484F9789665425A /* ScamShield */;
+			targetProxy = A51D92B7F4D8E915685564AF /* PBXContainerItemProxy */;
+		};
+		9198B39B2152D8136F6E6E6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB14AD11E484F9789665425A /* ScamShield */;
+			targetProxy = A20A9BD0D2C0EF4E12079DDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		020332442DC1CDF06E8260D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = local.scamshield.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScamShield.app/ScamShield";
+			};
+			name = Debug;
+		};
+		07CE2470FCC295B27A504886 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		165FE866F16D942B385BBCBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = local.scamshield.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScamShield.app/ScamShield";
+			};
+			name = Release;
+		};
+		31E3BDEB8CEC447ADBD4138C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = local.scamshield.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = ScamShield;
+			};
+			name = Release;
+		};
+		51167B97AFAC44F275535539 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA6C120DB6A503D0F0A5798F /* Signing.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = ScamShield/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		96973A764615222C771F15A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = local.scamshield.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = ScamShield;
+			};
+			name = Debug;
+		};
+		9CAB18FBAA47E6230DCCD1CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA6C120DB6A503D0F0A5798F /* Signing.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = ScamShield/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CA037F3537E815B5BEF8727E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D4AAC0CEB200FA087F9BF39 /* Build configuration list for PBXProject "ScamShield" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07CE2470FCC295B27A504886 /* Debug */,
+				CA037F3537E815B5BEF8727E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		50E5EC1F0EBD69F181D60882 /* Build configuration list for PBXNativeTarget "ScamShieldTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				020332442DC1CDF06E8260D0 /* Debug */,
+				165FE866F16D942B385BBCBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C78BA21A2BC132655016D13D /* Build configuration list for PBXNativeTarget "ScamShieldUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96973A764615222C771F15A5 /* Debug */,
+				31E3BDEB8CEC447ADBD4138C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D65ABC552367E1761EA7C52D /* Build configuration list for PBXNativeTarget "ScamShield" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CAB18FBAA47E6230DCCD1CE /* Debug */,
+				51167B97AFAC44F275535539 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A159ED954C0FE4063FEDF625 /* Project object */;
+}

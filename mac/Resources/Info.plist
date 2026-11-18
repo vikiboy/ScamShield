@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>CFBundleIdentifier</key><string>local.scamshield.agent</string>
+  <key>CFBundleName</key><string>ScamShield</string>
+  <key>CFBundleDisplayName</key><string>ScamShield</string>
+  <key>CFBundleExecutable</key><string>ScamShieldAgent</string>
+  <key>CFBundlePackageType</key><string>APPL</string>
+  <key>CFBundleShortVersionString</key><string>1.0</string>
+  <key>CFBundleVersion</key><string>1</string>
+  <key>CFBundleIconFile</key><string>AppIcon</string>
+  <key>LSMinimumSystemVersion</key><string>15.0</string>
+  <key>LSUIElement</key><true/>
+  <key>NSContactsUsageDescription</key><string>ScamShield checks whether a caller is in your contacts so people you know are never filed as spam. Contacts never leave this Mac.</string>
+  <key>NSCalendarsFullAccessUsageDescription</key><string>ScamShield matches voicemails against upcoming appointments (e.g. a dentist confirming a visit) so they reach Needs Attention. Calendar data never leaves this Mac.</string>
+  <key>NSRemindersFullAccessUsageDescription</key><string>ScamShield puts calls that need you into a "ScamShield" Reminders list so they reach your iPhone through iCloud, and reads back the ones you tick off or move.</string>
+  <key>NSRemindersUsageDescription</key><string>ScamShield delivers calls that need you to your iPhone through Reminders.</string>
+  <key>NSCalendarsUsageDescription</key><string>ScamShield matches voicemails against upcoming appointments. Calendar data never leaves this Mac.</string>
+</dict>
+</plist>

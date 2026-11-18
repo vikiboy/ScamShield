@@ -1,0 +1,9 @@
+// Signing for the ScamShield iPhone app. Filled in by the Mac-side install script;
+// leave DEVELOPMENT_TEAM empty to build for the simulator without signing setup.
+
+DEVELOPMENT_TEAM =
+PRODUCT_BUNDLE_IDENTIFIER = local.scamshield.app
+CODE_SIGN_STYLE = Automatic
+
+// Shared secret for the direct Wi-Fi path to the Mac (filled in by scripts/ios-install.sh).
+SCAMSHIELD_LAN_TOKEN =

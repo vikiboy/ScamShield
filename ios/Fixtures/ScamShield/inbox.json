@@ -1,0 +1,774 @@
+{
+  "version": 1,
+  "generatedAt": "2026-11-17T18:44:01Z",
+  "mac": {
+    "lastCallSeen": "2026-11-17T18:19:01Z",
+    "lastIngest": "2026-11-17T18:43:01Z",
+    "models": "ok"
+  },
+  "items": [
+    {
+      "id": "call:F1A0-0001",
+      "number": "+14155550101",
+      "displayNumber": "(415) 555-0101",
+      "date": "2026-11-17T18:19:01Z",
+      "answered": false,
+      "durationSec": 0,
+      "callCount": 1,
+      "voicemail": {
+        "id": "4D92688B-0001-4A1E-9C1B-5550101AAAA1",
+        "durationSec": 19.4,
+        "transcript": "Hi, this is Dana from Bayview Dental calling to confirm your cleaning on Thursday at 3 PM. If that time no longer works, please give us a call back at 415 555 0101 before Wednesday so we can offer the slot to someone on the waitlist. Thanks, and have a great day.",
+        "transcriptConfidence": 0.93,
+        "hasAudio": true,
+        "audioFile": "audio/4D92688B-0001-4A1E-9C1B-5550101AAAA1.m4a"
+      },
+      "bucket": "attention",
+      "category": "medical",
+      "confidence": 0.91,
+      "callback": {
+        "recommended": true,
+        "probability": 0.86
+      },
+      "caller": {
+        "name": "Dana",
+        "organization": "Bayview Dental"
+      },
+      "summary": "Confirming your cleaning on Thursday at 3 PM; call back before Wednesday to reschedule.",
+      "reasons": [
+        "Mentions an appointment",
+        "Asks for a call back",
+        "Local business number"
+      ],
+      "reputation": {
+        "score": 0.0,
+        "complaints": 0,
+        "robocallShare": 0.0
+      },
+      "userLabeled": false,
+      "done": false,
+      "notified": false
+    },
+    {
+      "id": "call:F1A0-0002",
+      "number": "+14155550102",
+      "displayNumber": "(415) 555-0102",
+      "date": "2026-11-17T18:04:01Z",
+      "answered": false,
+      "durationSec": 0,
+      "callCount": 3,
+      "bucket": "attention",
+      "category": "repeated_caller",
+      "confidence": 0.74,
+      "callback": {
+        "recommended": true,
+        "probability": 0.61
+      },
+      "summary": "Called 3 times in the last hour without leaving a message.",
+      "reasons": [
+        "3 calls in under an hour",
+        "No spam reports for this number"
+      ],
+      "reputation": {
+        "score": 0.0,
+        "complaints": 0,
+        "robocallShare": 0.0
+      },
+      "userLabeled": false,
+      "done": false,
+      "notified": false
+    },
+    {
+      "id": "call:F1A0-0016",
+      "number": "+14155550116",
+      "displayNumber": "(415) 555-0116",
+      "date": "2026-11-17T17:54:01Z",
+      "answered": false,
+      "durationSec": 0,
+      "callCount": 1,
+      "voicemail": {
+        "id": "4D92688B-0016-4A1E-9C1B-5550116AAA16",
+        "durationSec": 14.8,
+        "transcript": "This is an urgent message from the Social Security Administration. Your social security number has been suspended due to suspicious activity. Press one now to speak with an officer or a warrant will be issued for your arrest.",
+        "transcriptConfidence": 0.9,
+        "hasAudio": true,
+        "audioFile": "audio/4D92688B-0016-4A1E-9C1B-5550116AAA16.m4a"
+      },
+      "bucket": "scam",
+      "category": "fraud",
+      "confidence": 0.97,
+      "callback": {
+        "recommended": false
+      },
+      "caller": {
+        "organization": "Social Security Administration"
+      },
+      "summary": "Claims your Social Security number is suspended and threatens arrest.",
+      "reasons": [
+        "Government agencies don’t call like this",
+        "Threatens arrest",
+        "Asks you to press 1"
+      ],
+      "reputation": {
+        "score": 0.92,
+        "complaints": 148,
+        "lastReported": "2026-11-17T17:14:01Z",
+        "robocallShare": 0.88
+      },
+      "userLabeled": false,
+      "done": false,
+      "notified": false
+    },
+    {
+      "id": "call:F1A0-0012",
+      "number": "+14155550112",
+      "displayNumber": "(415) 555-0112",
+      "date": "2026-11-17T17:34:01Z",
+      "answered": false,
+      "durationSec": 0,
+      "callCount": 1,
+      "bucket": "review",
+      "category": "no_message",
+      "confidence": 0.6,
+      "callback": {
+        "recommended": false
+      },
+      "reasons": [
+        "No voicemail",
+        "Unknown number"
+      ],
+      "reputation": {
+        "score": 0.0,
+        "complaints": 0,
+        "robocallShare": 0.0
+      },
+      "userLabeled": false,
+      "done": false,
+      "notified": false
+    },
+    {
+      "id": "call:F1A0-0003",
+      "number": "jordan.lee@example.com",
+      "contactName": "Jordan Lee",
+      "date": "2026-11-17T16:14:01Z",
+      "answered": false,
+      "durationSec": 0,
+      "callCount": 1,
+      "bucket": "attention",
+      "category": "personal",
+      "confidence": 0.95,
+      "callback": {
+        "recommended": false
+      },
+      "summary": "Missed FaceTime audio call.",
+      "reasons": [
+        "In your contacts",
+        "FaceTime call"
+      ],
+      "reputation": {
+        "score": 0.0,
+        "complaints": 0,
+        "robocallShare": 0.0
+      },
+      "userLabeled": false,
+      "done": false,
+      "notified": false
+    },
+    {
+      "id": "call:F1A0-0017",
+      "number": "+14155550117",
+      "displayNumber": "(415) 555-0117",
+      "date": "2026-11-17T15:24:01Z",
+      "answered": false,
+      "durationSec": 0,
+      "callCount": 1,
+      "voicemail": {
+        "id": "4D92688B-0017-4A1E-9C1B-5550117AAA17",
+        "durationSec": 10.0,
+        "transcript": "Congratulations, you qualify for a lower energy rate. Press 1 to learn more.",
+        "transcriptConfidence": 0.86,
+        "hasAudio": true
+      },
+      "bucket": "scam",
+      "category": "robocall",
+      "confidence": 0.93,
+      "callback": {
+        "recommended": false
+      },
+      "summary": "Recorded message about lowering your energy bill.",
+      "reasons": [
+        "Recorded message",
+        "Reported as robocall"
+      ],
+      "reputation": {
+        "score": 0.81,
+        "complaints": 63,
+        "lastReported": "2026-11-16T12:44:01Z",
+        "robocallShare": 0.97
+      },
+      "userLabeled": false,
+      "done": false,
+      "notified": false
+    },
+    {
+      "id": "call:F1A0-0004",
+      "number": "+14155550104",
+      "displayNumber": "(415) 555-0104",
+      "date": "2026-11-17T14:54:01Z",
+      "answered": false,
+      "durationSec": 0,
+      "callCount": 1,
+      "voicemail": {
+        "id": "4D92688B-0004-4A1E-9C1B-5550104AAAA4",
+        "durationSec": 22.0,
+        "transcript": "Hello, this is the fraud prevention team at First Harbor Credit Union. We noticed an unusual purchase on your debit card ending in 4421. Please call the number on the back of your card.",
+        "transcriptConfidence": 0.88,
+        "hasAudio": true
+      },
+      "bucket": "attention",
+      "category": "financial_legit",
+      "confidence": 0.82,
+      "callback": {
+        "recommended": true,
+        "probability": 0.79
+      },
+      "caller": {
+        "organization": "First Harbor Credit Union"
+      },
+      "summary": "Fraud team asking you to confirm a recent card purchase; call the number on your card.",
+      "reasons": [
+        "Matches your bank",
+        "Doesn’t ask for personal details",
+        "Tells you to use the number on your card"
+      ],
+      "reputation": {
+        "score": 0.0,
+        "complaints": 0,
+        "robocallShare": 0.0
+      },
+      "userLabeled": false,
+      "done": false,
+      "notified": false
+    },
+    {
+      "id": "vm:F1A0-0014",
+      "number": "+14155550114",
+      "displayNumber": "(415) 555-0114",
+      "date": "2026-11-17T13:44:01Z",
+      "answered": false,
+      "durationSec": 0,
+      "callCount": 1,
+      "voicemail": {
+        "id": "4D92688B-0014-4A1E-9C1B-5550114AAA14",
+        "durationSec": 11.0,
+        "transcript": "hi this is calling about the account we need you to call back at your earliest",
+        "transcriptConfidence": 0.42,
+        "hasAudio": true
+      },
+      "bucket": "review",
+      "category": "unclear",
+      "confidence": 0.48,
+      "callback": {
+        "recommended": false
+      },
+      "summary": "Hard to make out; mentions an account and a callback.",
+      "reasons": [
+        "Transcript is unclear",
+        "Mentions an account"
+      ],
+      "reputation": {
+        "score": 0.0,
+        "complaints": 0,
+        "robocallShare": 0.0
+      },
+      "userLabeled": false,
+      "done": false,
+      "notified": false
+    },
+    {
+      "id": "call:F1A0-0005",
+      "number": "+14155550105",
+      "displayNumber": "(415) 555-0105",
+      "date": "2026-11-17T12:44:01Z",
+      "answered": false,
+      "durationSec": 0,
+      "callCount": 1,
+      "voicemail": {
+        "id": "4D92688B-0005-4A1E-9C1B-5550105AAAA5",
+        "durationSec": 9.0,
+        "transcript": "Hey, it's Sam, I saw your listing for the road bike. Is it still available? Call me back.",
+        "transcriptConfidence": 0.9,
+        "hasAudio": true
+      },
+      "bucket": "attention",
+      "category": "callback_request",
+      "confidence": 0.77,
+      "callback": {
+        "recommended": true,
+        "probability": 0.7
+      },
+      "caller": {
+        "name": "Sam"
+      },
+      "summary": "Sam about the bike you listed; wants to see it this weekend.",
+      "reasons": [
+        "Asks for a call back",
+        "Mentions something you posted"
+      ],
+      "reputation": {
+        "score": 0.0,
+        "complaints": 0,
+        "robocallShare": 0.0
+      },
+      "userLabeled": false,
+      "done": false,
+      "notified": false
+    },
+    {
+      "id": "call:F1A0-0013",
+      "number": "",
+      "date": "2026-11-16T19:44:01Z",
+      "answered": false,
+      "durationSec": 0,
+      "callCount": 1,
+      "bucket": "review",
+      "category": "no_message",
+      "confidence": 0.55,
+      "callback": {
+        "recommended": false
+      },
+      "reasons": [
+        "No voicemail",
+        "Caller ID withheld"
+      ],
+      "reputation": {
+        "score": 0.0,
+        "complaints": 0,
+        "robocallShare": 0.0
+      },
+      "userLabeled": false,
+      "done": false,
+      "notified": false
+    },
+    {
+      "id": "call:F1A0-0006",
+      "number": "+14155550106",
+      "displayNumber": "(415) 555-0106",
+      "contactName": "Mom",
+      "date": "2026-11-16T16:44:01Z",
+      "answered": false,
+      "durationSec": 0,
+      "callCount": 1,
+      "voicemail": {
+        "id": "4D92688B-0006-4A1E-9C1B-5550106AAAA6",
+        "durationSec": 7.5,
+        "transcript": "Hi sweetheart, just checking if you're still coming for dinner on Sunday. Love you.",
+        "transcriptConfidence": 0.95,
+        "hasAudio": true
+      },
+      "bucket": "attention",
+      "category": "known_contact",
+      "confidence": 0.98,
+      "callback": {
+        "recommended": true,
+        "probability": 0.9
+      },
+      "summary": "Asking whether you’re coming for dinner on Sunday.",
+      "reasons": [
+        "In your contacts"
+      ],
+      "reputation": {
+        "score": 0.0,
+        "complaints": 0,
+        "robocallShare": 0.0
+      },
+      "userLabeled": false,
+      "done": false,
+      "notified": false
+    },
+    {
+      "id": "call:F1A0-0010",
+      "number": "+14155550110",
+      "displayNumber": "(415) 555-0110",
+      "date": "2026-11-16T16:14:01Z",
+      "answered": false,
+      "durationSec": 0,
+      "callCount": 1,
+      "voicemail": {
+        "id": "4D92688B-0010-4A1E-9C1B-5550110AAA10",
+        "durationSec": 8.0,
+        "transcript": "This is Northside Physical Therapy with a reminder of your appointment tomorrow at 9 AM.",
+        "transcriptConfidence": 0.94,
+        "hasAudio": true
+      },
+      "bucket": "attention",
+      "category": "appointment",
+      "confidence": 0.88,
+      "callback": {
+        "recommended": false
+      },
+      "caller": {
+        "organization": "Northside Physical Therapy"
+      },
+      "summary": "Reminder: physical therapy session tomorrow at 9 AM.",
+      "reasons": [
+        "Matches a calendar event",
+        "Mentions an appointment"
+      ],
+      "reputation": {
+        "score": 0.0,
+        "complaints": 0,
+        "robocallShare": 0.0
+      },
+      "userLabeled": false,
+      "done": false,
+      "notified": false
+    },
+    {
+      "id": "call:F1A0-0018",
+      "number": "+14155550118",
+      "displayNumber": "(415) 555-0118",
+      "date": "2026-11-16T15:44:01Z",
+      "answered": false,
+      "durationSec": 0,
+      "callCount": 1,
+      "voicemail": {
+        "id": "4D92688B-0018-4A1E-9C1B-5550118AAA18",
+        "durationSec": 13.0,
+        "transcript": "You've been pre-approved for a business loan of up to two hundred fifty thousand dollars.",
+        "transcriptConfidence": 0.88,
+        "hasAudio": true
+      },
+      "bucket": "scam",
+      "category": "loan_offer",
+      "confidence": 0.89,
+      "callback": {
+        "recommended": false
+      },
+      "caller": {
+        "organization": "Capital Lending Partners"
+      },
+      "summary": "Pre-approved business loan offer.",
+      "reasons": [
+        "Unsolicited loan offer"
+      ],
+      "reputation": {
+        "score": 0.66,
+        "complaints": 21,
+        "lastReported": "2026-11-14T18:44:01Z",
+        "robocallShare": 0.7
+      },
+      "userLabeled": false,
+      "done": false,
+      "notified": false
+    },
+    {
+      "id": "call:F1A0-0007",
+      "number": "+14155550107",
+      "displayNumber": "(415) 555-0107",
+      "date": "2026-11-16T13:44:01Z",
+      "answered": false,
+      "durationSec": 0,
+      "callCount": 1,
+      "voicemail": {
+        "id": "4D92688B-0007-4A1E-9C1B-5550107AAAA7",
+        "durationSec": 12.0,
+        "transcript": "Parcel Express driver here, I couldn't find the entrance to your building. Your package is going back to the depot, you can reschedule online.",
+        "transcriptConfidence": 0.84,
+        "hasAudio": true
+      },
+      "bucket": "attention",
+      "category": "delivery",
+      "confidence": 0.8,
+      "callback": {
+        "recommended": false
+      },
+      "caller": {
+        "organization": "Parcel Express"
+      },
+      "summary": "Driver couldn’t find your building entrance; package returned to depot.",
+      "reasons": [
+        "Mentions a delivery"
+      ],
+      "reputation": {
+        "score": 0.0,
+        "complaints": 0,
+        "robocallShare": 0.0
+      },
+      "userLabeled": false,
+      "done": false,
+      "notified": false
+    },
+    {
+      "id": "call:F1A0-0019",
+      "number": "+14155550119",
+      "displayNumber": "(415) 555-0119",
+      "date": "2026-11-16T12:44:01Z",
+      "answered": false,
+      "durationSec": 0,
+      "callCount": 1,
+      "voicemail": {
+        "id": "4D92688B-0019-4A1E-9C1B-5550119AAA19",
+        "durationSec": 12.0,
+        "transcript": "This is your final notice regarding your vehicle's extended warranty.",
+        "transcriptConfidence": 0.9,
+        "hasAudio": true
+      },
+      "bucket": "scam",
+      "category": "telemarketing",
+      "confidence": 0.94,
+      "callback": {
+        "recommended": false
+      },
+      "caller": {
+        "organization": "Vehicle Services Department"
+      },
+      "summary": "Final notice about your car’s extended warranty.",
+      "reasons": [
+        "Extended warranty pitch",
+        "Reported as telemarketing"
+      ],
+      "reputation": {
+        "score": 0.88,
+        "complaints": 310,
+        "lastReported": "2026-11-17T13:44:01Z",
+        "robocallShare": 0.91
+      },
+      "userLabeled": false,
+      "done": false,
+      "notified": false
+    },
+    {
+      "id": "call:F1A0-0015",
+      "number": "+14155550115",
+      "displayNumber": "(415) 555-0115",
+      "date": "2026-11-15T17:44:01Z",
+      "answered": false,
+      "durationSec": 0,
+      "callCount": 1,
+      "bucket": "review",
+      "category": "no_message",
+      "confidence": 0.58,
+      "callback": {
+        "recommended": false
+      },
+      "reasons": [
+        "No voicemail",
+        "Unknown number"
+      ],
+      "reputation": {
+        "score": 0.0,
+        "complaints": 0,
+        "robocallShare": 0.0
+      },
+      "userLabeled": false,
+      "done": false,
+      "notified": false
+    },
+    {
+      "id": "call:F1A0-0008",
+      "number": "+14155550108",
+      "displayNumber": "(415) 555-0108",
+      "date": "2026-11-15T16:44:01Z",
+      "answered": false,
+      "durationSec": 0,
+      "callCount": 1,
+      "voicemail": {
+        "id": "4D92688B-0008-4A1E-9C1B-5550108AAAA8",
+        "durationSec": 16.0,
+        "transcript": "Hi, this is Priya with Brightpath Talent. I have a senior engineering role I think you'd be a great fit for. Do you have fifteen minutes this week?",
+        "transcriptConfidence": 0.9,
+        "hasAudio": true
+      },
+      "bucket": "attention",
+      "category": "recruiter",
+      "confidence": 0.72,
+      "callback": {
+        "recommended": true,
+        "probability": 0.55
+      },
+      "caller": {
+        "name": "Priya",
+        "organization": "Brightpath Talent"
+      },
+      "summary": "Recruiter with a senior engineering role; asks for 15 minutes this week.",
+      "reasons": [
+        "Recruiter",
+        "Specific details about you"
+      ],
+      "reputation": {
+        "score": 0.0,
+        "complaints": 0,
+        "robocallShare": 0.0
+      },
+      "userLabeled": false,
+      "done": false,
+      "notified": false
+    },
+    {
+      "id": "call:F1A0-0020",
+      "number": "+14155550120",
+      "displayNumber": "(415) 555-0120",
+      "date": "2026-11-15T14:44:01Z",
+      "answered": false,
+      "durationSec": 0,
+      "callCount": 1,
+      "bucket": "scam",
+      "category": "spam_other",
+      "confidence": 0.71,
+      "callback": {
+        "recommended": false
+      },
+      "reasons": [
+        "Reported as spam"
+      ],
+      "reputation": {
+        "score": 0.58,
+        "complaints": 9,
+        "robocallShare": 0.4
+      },
+      "userLabeled": false,
+      "done": false,
+      "notified": false
+    },
+    {
+      "id": "call:F1A0-0021",
+      "number": "+14155550121",
+      "displayNumber": "(415) 555-0121",
+      "date": "2026-11-15T13:44:01Z",
+      "answered": false,
+      "durationSec": 0,
+      "callCount": 1,
+      "bucket": "scam",
+      "category": "blocked",
+      "confidence": 1.0,
+      "callback": {
+        "recommended": false
+      },
+      "reasons": [
+        "You blocked this number"
+      ],
+      "reputation": {
+        "score": 0.0,
+        "complaints": 0,
+        "robocallShare": 0.0
+      },
+      "userLabeled": true,
+      "done": false,
+      "notified": false
+    },
+    {
+      "id": "call:F1A0-0009",
+      "number": "+14155550109",
+      "displayNumber": "(415) 555-0109",
+      "date": "2026-11-14T15:44:01Z",
+      "answered": false,
+      "durationSec": 0,
+      "callCount": 1,
+      "voicemail": {
+        "id": "4D92688B-0009-4A1E-9C1B-5550109AAAA9",
+        "durationSec": 6.0,
+        "transcript": "Greenleaf Plumbing calling, your quote for the water heater replacement is ready.",
+        "transcriptConfidence": 0.92,
+        "hasAudio": true
+      },
+      "bucket": "attention",
+      "category": "business",
+      "confidence": 0.8,
+      "callback": {
+        "recommended": false
+      },
+      "caller": {
+        "organization": "Greenleaf Plumbing"
+      },
+      "summary": "Quote for the water heater is ready.",
+      "reasons": [
+        "You called this number last week"
+      ],
+      "reputation": {
+        "score": 0.0,
+        "complaints": 0,
+        "robocallShare": 0.0
+      },
+      "userLabeled": false,
+      "done": false,
+      "notified": false
+    },
+    {
+      "id": "call:F1A0-0022",
+      "number": "+14155550122",
+      "displayNumber": "(415) 555-0122",
+      "date": "2026-11-14T10:44:01Z",
+      "answered": false,
+      "durationSec": 0,
+      "callCount": 1,
+      "voicemail": {
+        "id": "4D92688B-0022-4A1E-9C1B-5550122AAA22",
+        "durationSec": 9.0,
+        "transcript": "This is Amazon security, a suspicious order of an iPhone was placed on your account.",
+        "transcriptConfidence": 0.89,
+        "hasAudio": true
+      },
+      "bucket": "scam",
+      "category": "fraud",
+      "confidence": 0.95,
+      "callback": {
+        "recommended": false
+      },
+      "caller": {
+        "organization": "Amazon Security"
+      },
+      "summary": "Claims a suspicious order was placed on your account.",
+      "reasons": [
+        "Impersonates a company",
+        "Reported as fraud"
+      ],
+      "reputation": {
+        "score": 0.9,
+        "complaints": 205,
+        "lastReported": "2026-11-17T16:44:01Z",
+        "robocallShare": 0.8
+      },
+      "userLabeled": false,
+      "done": true,
+      "notified": false
+    },
+    {
+      "id": "call:F1A0-0011",
+      "number": "+14155550111",
+      "displayNumber": "(415) 555-0111",
+      "date": "2026-11-12T18:44:01Z",
+      "answered": false,
+      "durationSec": 0,
+      "callCount": 1,
+      "voicemail": {
+        "id": "4D92688B-0011-4A1E-9C1B-5550111AAA11",
+        "durationSec": 5.0,
+        "transcript": "Your prescription is ready for pickup.",
+        "transcriptConfidence": 0.9,
+        "hasAudio": true
+      },
+      "bucket": "attention",
+      "category": "medical",
+      "confidence": 0.9,
+      "callback": {
+        "recommended": false
+      },
+      "caller": {
+        "organization": "Bayview Pharmacy"
+      },
+      "summary": "Prescription ready for pickup.",
+      "reasons": [
+        "Mentions a prescription"
+      ],
+      "reputation": {
+        "score": 0.0,
+        "complaints": 0,
+        "robocallShare": 0.0
+      },
+      "userLabeled": false,
+      "done": true,
+      "notified": false
+    }
+  ]
+}

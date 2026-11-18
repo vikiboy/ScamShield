@@ -1,0 +1,107 @@
+# XcodeGen spec for the ScamShield iPhone app.
+#
+#   cd ios && xcodegen
+#
+# Signing (team + bundle id) lives in Config/Signing.xcconfig so an install script can
+# fill it in; nothing here may set PRODUCT_BUNDLE_IDENTIFIER or DEVELOPMENT_TEAM for the
+# app target, because target settings would override the xcconfig.
+
+name: ScamShield
+
+options:
+  deploymentTarget:
+    iOS: "18.0"
+  createIntermediateGroups: true
+  developmentLanguage: en
+
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    DEAD_CODE_STRIPPING: YES
+
+targets:
+  ScamShield:
+    type: application
+    platform: iOS
+    sources:
+      - path: ScamShield
+    configFiles:
+      Debug: Config/Signing.xcconfig
+      Release: Config/Signing.xcconfig
+    info:
+      path: ScamShield/Info.plist
+      properties:
+        CFBundleDisplayName: ScamShield
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        LSRequiresIPhoneOS: true
+        UILaunchScreen: {}
+        UIApplicationSupportsIndirectInputEvents: true
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        UIBackgroundModes:
+          - fetch
+        BGTaskSchedulerPermittedIdentifiers:
+          - local.scamshield.refresh
+        ITSAppUsesNonExemptEncryption: false
+        NSLocalNetworkUsageDescription: ScamShield gets your latest call inbox directly from your Mac when both are on the same Wi-Fi.
+        NSBonjourServices:
+          - _scamshield._tcp
+        NSAppTransportSecurity:
+          NSAllowsLocalNetworking: true
+        ScamShieldLANToken: $(SCAMSHIELD_LAN_TOKEN)
+    settings:
+      base:
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        TARGETED_DEVICE_FAMILY: "1"
+        SUPPORTS_MACCATALYST: NO
+        SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD: NO
+        SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD: NO
+
+  ScamShieldTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: ScamShieldTests
+    dependencies:
+      - target: ScamShield
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: local.scamshield.tests
+        GENERATE_INFOPLIST_FILE: YES
+        TARGETED_DEVICE_FAMILY: "1"
+
+  ScamShieldUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: ScamShieldUITests
+    dependencies:
+      - target: ScamShield
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: local.scamshield.uitests
+        GENERATE_INFOPLIST_FILE: YES
+        TARGETED_DEVICE_FAMILY: "1"
+        TEST_TARGET_NAME: ScamShield
+
+schemes:
+  ScamShield:
+    build:
+      targets:
+        ScamShield: all
+        ScamShieldTests: [test]
+        ScamShieldUITests: [test]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - ScamShieldTests
+        - ScamShieldUITests
+    archive:
+      config: Release

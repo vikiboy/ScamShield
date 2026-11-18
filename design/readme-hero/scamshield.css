@@ -1,0 +1,268 @@
+/* All rules belong to this example. The stage is the section's ground; one
+   32px gutter for the window's top and left and the phone's right. */
+.sx {
+  & .ss-stage {
+    --gutter: 32px;
+    --ss-accent: #0a72e8;
+    --ss-accent-2: #0a72e8;
+    overflow: hidden;
+    background: var(--ss-well);
+  }
+
+  /* ---- The Mac: pinned top-left, runs off the bottom ---- */
+  .sx-window {
+    position: absolute;
+    top: var(--gutter);
+    left: var(--gutter);
+    width: 560px;
+    height: 520px;
+    box-shadow: var(--ss-shadow-hero);
+  }
+
+  .sx-body {
+    height: 100%;
+    background: var(--ss-surface);
+    padding: 20px 24px 0;
+  }
+
+  /* The subject lives in the left 380px; the phone covers the rest */
+  .sx-swap,
+  .sx-earlier {
+    width: 368px;
+  }
+
+  .sx-swap {
+    display: grid;
+  }
+
+  .sx-panel {
+    grid-area: 1 / 1;
+    display: grid;
+    gap: 14px;
+    opacity: 0;
+    transform: translateY(6px);
+    transition: opacity 0.35s ease, transform 0.35s ease;
+    will-change: transform;
+  }
+
+  .sx-panel[data-on] {
+    opacity: 1;
+    transform: none;
+    transition: opacity 0.6s ease 0.25s, transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) 0.25s;
+  }
+
+  .sx-caller {
+    --ss-row-pad: 0px;
+  }
+
+  .sx-quote {
+    margin: 0;
+    padding: 12px 14px;
+    border-radius: 10px;
+    background: var(--ss-canvas);
+    color: var(--ss-text);
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .sx-decision {
+    display: grid;
+    gap: 10px;
+    padding-top: 2px;
+  }
+
+  .sx-decision__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 18px;
+  }
+
+  .sx-model {
+    color: var(--ss-text-faint);
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .sx-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--ss-text-faint);
+    font-size: 12px;
+    transition: opacity 0.3s ease;
+  }
+
+  .sx-status[data-on] {
+    opacity: 0;
+  }
+
+  .sx-cat {
+    display: grid;
+    grid-template-columns: 96px 1fr 40px;
+    align-items: center;
+    gap: 12px;
+    height: 20px;
+  }
+
+  .sx-cat__label {
+    color: var(--ss-text-strong);
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .sx-cat__pct {
+    justify-self: end;
+    color: var(--ss-text-strong);
+    font-size: 13px;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .sx-cat__pct[data-on] {
+    opacity: 1;
+  }
+
+  .sx-meter .ss-meter__fill {
+    transition: clip-path 0.9s cubic-bezier(0.45, 0, 0.1, 1);
+  }
+
+  .sx-result {
+    will-change: transform;
+    height: 24px;
+    margin-top: 2px;
+    opacity: 0;
+    transform: translateY(4px);
+    transition: opacity 0.4s ease 0.55s, transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1) 0.55s;
+  }
+
+  .sx-result[data-on] {
+    opacity: 1;
+    transform: none;
+  }
+
+  .sx-earlier {
+    display: grid;
+    gap: 14px;
+    margin-top: 26px;
+    padding-top: 20px;
+    border-top: 1px solid var(--ss-line);
+  }
+
+  .sx-earlier__row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .sx-earlier__lines {
+    display: grid;
+    gap: 7px;
+  }
+
+  /* ---- The iPhone: straddles the window's right edge, off the bottom ---- */
+  .sx-phone {
+    position: absolute;
+    top: 56px;
+    right: var(--gutter);
+  }
+
+  .sx-app {
+    position: absolute;
+    inset: 0;
+    background: #f2f2f7;
+  }
+
+  .sx-nav {
+    position: absolute;
+    top: 58px;
+    right: 20px;
+  }
+
+  .sx-seen {
+    display: inline-block;
+    padding: 6px 2px 6px 12px;
+    color: var(--ss-accent);
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  .sx-title {
+    position: absolute;
+    top: 94px;
+    left: 20px;
+    color: #000;
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 41px;
+  }
+
+  .sx-section {
+    display: block;
+    margin: 0 0 7px 36px;
+    color: rgba(60, 60, 67, 0.6);
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+
+  .sx-section--gap {
+    margin-top: 24px;
+  }
+
+  .sx-group {
+    position: absolute;
+    top: 178px;
+    right: 16px;
+    left: 16px;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #fff;
+  }
+
+  .sx-stack { position: absolute; top: 150px; right: 0; left: 0; }
+
+  .sx-row {
+    --ss-row-pad: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: inset 0 -0.5px 0 rgba(60, 60, 67, 0.18);
+  }
+
+  .sx-row .ss-row__subtitle {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* The banner drops in on mount (the kit's keyframe) and retreats upward */
+  .sx-banner {
+    will-change: transform;
+    position: absolute;
+    inset: 0 0 auto;
+    z-index: 2;
+    transform: translateY(-140px);
+    transition: transform 0.45s cubic-bezier(0.4, 0, 0.6, 1);
+    pointer-events: none;
+  }
+
+  .sx-banner[data-on] {
+    transform: none;
+    transition: transform 0.55s cubic-bezier(0.2, 0.9, 0.25, 1);
+  }
+
+  .sx-banner .ss-notification[data-banner] {
+    animation: none;
+    background: #fff;
+  }
+
+  .sx-appicon {
+    display: block;
+    width: 38px;
+    height: 38px;
+    border-radius: 9px;
+  }
+}

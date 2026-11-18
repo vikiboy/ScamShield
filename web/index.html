@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="ScamShield">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#f2f2f7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
+  <title>ScamShield</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <div class="navbar-side" id="nav-left"></div>
+      <div class="navbar-title" id="nav-title" aria-hidden="true"></div>
+      <div class="navbar-side navbar-side--right" id="nav-right"></div>
+    </div>
+  </header>
+  <div class="ptr" id="ptr" aria-hidden="true"><span class="spinner"></span></div>
+
+  <main id="main" tabindex="-1"></main>
+
+  <nav class="tabbar" aria-label="Sections">
+    <a class="tab" href="#/attention" data-tab="attention">
+      <svg viewBox="0 0 28 28" aria-hidden="true"><path d="M14 3.5c-4 0-7 3-7 7v4.6l-2 3.4h18l-2-3.4v-4.6c0-4-3-7-7-7Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M11 21.5a3 3 0 0 0 6 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <span class="tab-label">Attention</span>
+      <span class="badge badge--alert" hidden></span>
+    </a>
+    <a class="tab" href="#/review" data-tab="review">
+      <svg viewBox="0 0 28 28" aria-hidden="true"><path d="M4 15.5 7 6h14l3 9.5V22a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 4 22Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M4 15.5h6a4 4 0 0 0 8 0h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+      <span class="tab-label">Review</span>
+      <span class="badge" hidden></span>
+    </a>
+    <a class="tab" href="#/scam" data-tab="scam">
+      <svg viewBox="0 0 28 28" aria-hidden="true"><path d="M14 3.5c3 1.8 6 2.4 8.5 2.4v7c0 5.6-3.5 9-8.5 11.3-5-2.3-8.5-5.7-8.5-11.3v-7c2.5 0 5.5-.6 8.5-2.4Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m11 11 6 6m0-6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <span class="tab-label">Scams</span>
+      <span class="badge" hidden></span>
+    </a>
+    <a class="tab" href="#/settings" data-tab="settings">
+      <svg viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="3.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 3.5v3m0 15v3M3.5 14h3m15 0h3M6.6 6.6l2.1 2.1m10.6 10.6 2.1 2.1M6.6 21.4l2.1-2.1M19.3 8.7l2.1-2.1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <span class="tab-label">Settings</span>
+    </a>
+  </nav>
+
+  <div id="sheet-root"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <noscript><p class="noscript">ScamShield needs JavaScript.</p></noscript>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

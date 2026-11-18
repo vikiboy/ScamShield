@@ -1,0 +1,34 @@
+{
+  "category": {
+    "type": "choice",
+    "instructions": "`voicemail.transcript` is an automatic transcript of a voicemail left on the recipient's personal phone. What kind of message is it?",
+    "criteria": {
+      "personal": "A friend, family member, neighbour or acquaintance speaking to the recipient personally.",
+      "appointment_or_medical": "A doctor, dentist, clinic, hospital, pharmacy, vet, salon or similar about the recipient's own appointment, prescription, results or care.",
+      "delivery_or_service": "A courier, delivery driver, contractor, technician, landlord or other service provider about a delivery, visit or job the recipient arranged.",
+      "work_or_recruiter": "A recruiter, hiring manager, colleague or business contact about a specific job, interview, project or meeting.",
+      "account_legit": "A real company the recipient already does business with (bank, utility, insurer, school, employer), which the caller NAMES, about a concrete account, order, bill or case of the recipient, with no pressure tactics or offers. Vague messages about 'your file', 'an update', 'time-sensitive' matters or 'finalizing' something that ask you to press a key or call back without naming the company are NOT this.",
+      "fraud_impersonation": "Impersonates a government agency, police, bank, Amazon, Apple, Medicare or tech support; or threatens arrest, suspension or legal action; or demands urgent payment, gift cards, codes or personal details.",
+      "loan_or_debt_offer": "Unsolicited loans, pre-approved financing, business funding, credit card interest reduction or debt relief.",
+      "sales_telemarketing": "Unsolicited sales or marketing: insurance, solar, home warranty, car warranty, offers to buy the recipient's house, vacations, products or services.",
+      "robocall_other": "Any other generic pre-recorded or automated message not addressed to the recipient specifically: political, survey, charity, or vague 'time-sensitive update', 'your file is ready', 'go over the details and get this finalized today' messages that ask you to press a key (e.g. 'press 2') or call back without saying who is calling or about which account.",
+      "silent_or_unclear": "Silence, noise, a hang-up, a wrong number, or too little content to tell what the caller wanted."
+    }
+  },
+  "callback": {
+    "type": "noul",
+    "instructions": "Based on `voicemail.transcript`, would a sensible person who has never heard of this caller want to return this call? Answer yes only when a real person or organization has a genuine, specific reason to reach the recipient (an appointment, delivery, job, account matter, or personal reason). Answer no for sales pitches, loan offers, scams, surveys and generic automated messages, even if they ask to be called back."
+  },
+  "fraud": {
+    "type": "noul",
+    "instructions": "Does `voicemail.transcript` show signs of fraud: impersonating an authority or well-known company, threats, false urgency, too-good-to-be-true approvals or prizes, or asking for payment, codes or personal information?"
+  },
+  "specific": {
+    "type": "noul",
+    "instructions": "In `voicemail.transcript`, does the caller refer to something specific to the recipient (the recipient's name, a particular appointment, order, application, job, case or prior conversation) rather than a generic message that could be sent to anyone? A claim like 'you applied for a loan' or 'your file is approved' with no verifiable detail counts as generic."
+  },
+  "automated": {
+    "type": "noul",
+    "instructions": "Is `voicemail.transcript` an automated or pre-recorded message rather than a live person speaking?"
+  }
+}
