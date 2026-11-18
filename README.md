@@ -86,6 +86,8 @@ On the iPhone:
 
 ## Using it
 
+<img src="docs/images/scams.png" alt="The iPhone app's Scams list, grouped by type: Loan offer (12) and Robocall (4), with Open and Done tabs and an Archive All button." width="300" align="right">
+
 - **Attention** shows a badge and sends alerts. **Seen** clears everything at once.
 - **Review** and **Scams** never alert or badge.
 - Open any item for the summary, the transcript, the voicemail audio and why it was filed there.
@@ -98,6 +100,8 @@ On the iPhone:
   legitimate content to Scams.
 
 The Mac also serves a full web UI at **http://127.0.0.1:8787**.
+
+<br clear="right">
 
 ## Configuration
 

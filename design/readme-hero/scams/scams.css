@@ -1,0 +1,96 @@
+/* All rules belong to this example. */
+.sxs {
+  & .ss-stage {
+    --ss-accent: #0a72e8;
+    --ss-accent-2: #0a72e8;
+    overflow: hidden;
+    border-radius: 14px;
+    background: #f4f3f1;
+  }
+
+  /* The app icon's red lane, as soft light behind the phone */
+  .sxs-wash {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(60% 50% at 50% 0%, rgba(226, 72, 60, 0.13), transparent 70%),
+      radial-gradient(70% 60% at 50% 100%, rgba(10, 114, 232, 0.07), transparent 70%);
+  }
+
+  /* Pinned, bottom bleed: a gutter from the top, centered, runs off the bottom */
+  .sxs-phone {
+    position: absolute;
+    top: 48px;
+    left: 50px;
+  }
+
+  .sxs-app {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 58px;
+    background: #f2f2f7;
+  }
+
+  .sxs-action {
+    align-self: flex-end;
+    margin-right: 20px;
+    padding: 6px 0;
+    color: var(--ss-accent);
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  .sxs-title {
+    margin: 6px 0 0 20px;
+    color: #000;
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 41px;
+  }
+
+  .sxs-seg {
+    margin: 14px 16px 6px;
+    font-size: 14px;
+  }
+
+  .sxs-section {
+    margin: 18px 0 7px 36px;
+    color: rgba(60, 60, 67, 0.6);
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+
+  .sxs-count {
+    color: rgba(60, 60, 67, 0.45);
+  }
+
+  .sxs-group {
+    margin: 0 16px;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #fff;
+  }
+
+  .sxs-row {
+    margin: 0;
+    border-radius: 0;
+    --ss-row-pad: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: inset 0 -0.5px 0 rgba(60, 60, 67, 0.18);
+  }
+
+  .sxs-row:last-child {
+    box-shadow: none;
+  }
+
+  .sxs-row .ss-row__subtitle {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}

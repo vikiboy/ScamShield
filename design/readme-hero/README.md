@@ -5,6 +5,7 @@ Stageshow (see [THIRD_PARTY_NOTICES.md](../../THIRD_PARTY_NOTICES.md)) scene: fa
 All content in it is fictional (555 numbers, an invented dental office).
 
 - `index.tsx`, `scamshield.css`: the scene (a device pair: the Mac's decision on the left, the iPhone app on the right).
+- `scams/`: the still in the README's "Using it" section (`docs/images/scams.png`), the iPhone app's Scams list grouped by type.
 - `record-frames.mjs`: records one loop frame by frame on the kit's virtual clock.
 
 To rebuild it:
